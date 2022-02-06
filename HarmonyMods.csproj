@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+	<EnableDefaultItems>false</EnableDefaultItems>
+	<RootNamespace>FuckOxideISetMyOwnNamespaces</RootNamespace>
+	<LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Plugins\Bootstrap.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Concentus" Version="1.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\publicized_assemblies\0Harmony_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\publicized_assemblies\Assembly-CSharp_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Console, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\publicized_assemblies\Facepunch.Console_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Network, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\publicized_assemblies\Facepunch.Network_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Raknet, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\publicized_assemblies\Facepunch.Raknet_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Rcon, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\publicized_assemblies\Facepunch.Rcon_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Sqlite, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\publicized_assemblies\Facepunch.Sqlite_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Win64, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\publicized_assemblies\Facepunch.Steamworks.Win64_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Unity, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\publicized_assemblies\Facepunch.Unity_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\publicized_assemblies\Facepunch.UnityEngine_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\publicized_assemblies\UnityEngine_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\publicized_assemblies\UnityEngine.CoreModule_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>Steam\Rust\RustDedicated_Data\Managed\publicized_assemblies\UnityEngine.PhysicsModule_publicized.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
