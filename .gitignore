@@ -15,7 +15,7 @@ Steam/rust
 Steam/Oxide.zip
 Steam/steamcmd/*
 !Steam/steamcmd/steamcmd.exe
-
+Steam/Rust/wrapper.js
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

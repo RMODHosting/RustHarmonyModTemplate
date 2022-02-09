@@ -15,7 +15,7 @@ namespace FuckOxideISetMyOwnNamespaces
             [HarmonyPostfix]
             public static void Postfix(ServerMgr __instance)
             {
-                Debug.Log("Spam in console! - Here's a private string: " + ServerMgr.Instance._AssemblyHash);
+                //Debug.Log("Spam in console! - Here's a private string: " + ServerMgr.Instance._AssemblyHash);
             }
         } 
         
